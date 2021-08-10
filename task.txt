@@ -1,0 +1,38 @@
+Visitor Managment
+Pages:
+	Dashboard
+	Company
+	Location
+	Security
+	Visitors
+	My Account
+
+
+Dashboard
+	- Bar Chart
+	- Line Chart
+	- Donout Chart
+	- Some Statistics
+		- No of Locations
+		- No of Securities
+		- No of Visitors
+		- Visitors per Security
+
+Company
+	- Table
+	- Create Company
+	- Create Form in Modal box
+	- Pagination
+
+
+Location
+	- Table
+	- Create Location
+	- Create Form in Modal box
+	- Pagination
+
+Security
+	- Table
+	- Create Security
+	- Create Form in Modal box
+	- Pagination

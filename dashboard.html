@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>Visitor managment</title>
+
+    <!-- Favicons -->
+    <link rel="icon" href="assets/img/favicons/favicon.ico" />
+
+    <!-- Custom styles for this template with bootstrap css -->
+    <!-- build:css -->
+    <link
+      rel="stylesheet"
+      href="assets/fonts/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link href="assets/css/app.css" rel="stylesheet" type="text/css" />
+    <!-- endbuild -->
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-2 d-flex justify-content-between">
+            <div class="logo">
+              <img src="assets/img/architect.png" alt="" />
+            </div>
+            
+          </div>
+          <div class="col-8 d-flex justify-content-center">
+            <div class="form-nav">
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+            <div class="navigations">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active header-link"
+                    aria-current="page"
+                    href="#"
+                    >mega menu</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link header-link" href="#">settings</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link header-link" href="#">projects</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-2 d-flex text-end">
+            <div class="dropdown drop">
+              <a
+                class="btn dropdown-toggle"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Hi,<span>I'm Sam</span
+                ><img
+                  class="img-fluid"
+                  src="assets/img/Profile-Avatar-PNG.png"
+                  alt="avatar"
+                />
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">My account</a></li>
+                <li><a class="dropdown-item" href="index.html">Logout</a></li>
+              </ul>
+            </div>
+            <a class="logo-icon" href=""><i class="bi bi-list"></i></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!------hero-->
+
+    <div class="main-section">
+      <div class="aside">
+        <div class="navigation">
+          <div>
+            <h5><a
+              class="btn d-flex justify-content-between collapsed"
+                data-bs-toggle="collapse"
+                href="#collapseExample2"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Pages
+                <i class="bi bi-caret-down-fill justify-content-end"></i
+              ></a></h5>
+             <div class="collapse" id="collapseExample2">
+              <div class="card card-body buttons">
+                <ul class="nav nav-style flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link list-group-item active" href="dashboard.html">dashboard</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="companies.html">Companies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="location.html">Location</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="visitors.html"> Visitors</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="security.html"> Securities</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-one">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="table-header">
+                <h5>Commerce Dashboard</h5>
+                <p>
+                  This dashboard was created as an example of the flexibility
+                  that Architect offers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="table-section" id="table-dashbord">
+          <div class="container">
+            <div class="row">
+              <div class="col-6">
+                <div class="card card-type-1">
+                  <div class="card-body">
+                    <div class="col-12">
+                      <div id="main" style="width: 500px; height: 400px"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card card-type-2">
+                  <div class="card-body">
+                    <div class="col-12">
+                      <div
+                        id="main-two"
+                        style="width: 100%; height: 400px"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card card-type-2">
+                  <div class="card-body">
+                    <div class="col-12">
+                      <div
+                        id="main-three"
+                        style="width: 100%; height: 400px"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card card-type-2">
+                  <div class="card-body">
+                    <div class="col-12">
+                      <div
+                        id="main-four"
+                        style="width: 100%; height: 400px"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------hero-->
+
+    <!-- Bootstrap 5 Javascript -->
+    <script
+      src="assets/js/vendor/bootstrap.bundle.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="assets/js/vendor/echarts.js" type="text/javascript"></script>
+
+    <!-- Custom Javascript -->
+    <!-- build:js -->
+    <script src="assets/js/app.js"></script>
+    <script type="text/javascript">
+      // based on prepared DOM, initialize echarts instance
+      var myChart = echarts.init(document.getElementById("main"));
+      var myPie = echarts.init(document.getElementById("main-two"));
+      var dotChart = echarts.init(document.getElementById("main-three"));
+      var donut = echarts.init(document.getElementById("main-four"));
+
+      // specify chart configuration item and data
+      var option = {
+        title: {
+          text: "ECharts entry example",
+        },
+        tooltip: {},
+        legend: {
+          data: ["Companies"],
+        },
+        xAxis: {
+          data: [
+            "Wipro",
+            "TCS",
+            "COGNIZANT",
+            "INFOTECH",
+            "TATA",
+            "INFO-PARK",
+          ],
+        },
+        yAxis: {},
+        series: [
+          {
+            name: "Companies",
+            type: "bar",
+            data: [5, 20, 36, 10, 10, 20],
+          },
+        ],
+      };
+
+      var optionTwo = {
+        tooltip: {
+          trigger: "item",
+        },
+        legend: {
+          top: "5%",
+          left: "center",
+        },
+        series: [
+          {
+            name: "Companies",
+            type: "pie",
+            radius: ["40%", "70%"],
+            avoidLabelOverlap: false,
+            itemStyle: {
+              borderRadius: 10,
+              borderColor: "#fff",
+              borderWidth: 2,
+            },
+            label: {
+              show: false,
+              position: "center",
+            },
+            emphasis: {
+              label: {
+                show: true,
+                fontSize: "40",
+                fontWeight: "bold",
+              },
+            },
+            labelLine: {
+              show: false,
+            },
+            data: [
+              { value: 1048, name: "WIPRO" },
+              { value: 735, name: "TCS" },
+              { value: 580, name: "INFO-TECH" },
+              { value: 484, name: "TATA" },
+              { value: 300, name: "INFO-PARK" },
+            ],
+          },
+        ],
+      };
+
+      var optionThree = {
+        xAxis: {},
+        yAxis: {},
+        series: [
+          {
+            symbolSize: 20,
+            data: [
+              [10.0, 8.04],
+              [8.07, 6.95],
+              [13.0, 7.58],
+              [9.05, 8.81],
+              [11.0, 8.33],
+              [14.0, 7.66],
+              [13.4, 6.81],
+              [10.0, 6.33],
+              [14.0, 8.96],
+              [12.5, 6.82],
+              [9.15, 7.2],
+              [11.5, 7.2],
+              [3.03, 4.23],
+              [12.2, 7.83],
+              [2.02, 4.47],
+              [1.05, 3.33],
+              [4.05, 4.96],
+              [6.03, 7.24],
+              [12.0, 6.26],
+              [12.0, 8.84],
+              [7.08, 5.82],
+              [5.02, 5.68],
+            ],
+            type: "scatter",
+          },
+        ],
+      };
+      var optionFour = {
+        title: {
+          text: "pieChart",
+          subtext: "AboutCompany",
+          left: "center",
+        },
+        tooltip: {
+          trigger: "item",
+        },
+        legend: {
+          orient: "vertical",
+          left: "left",
+        },
+        series: [
+          {
+            name: "Compannies",
+            type: "pie",
+            radius: "50%",
+            data: [
+              { value: 1048, name: "WIPRO" },
+              { value: 735, name: "TCL" },
+              { value: 580, name: "HCL" },
+              { value: 484, name: "INFOTECH" },
+              { value: 300, name: "CONGNIZNT" },
+            ],
+            emphasis: {
+              itemStyle: {
+                shadowBlur: 10,
+                shadowOffsetX: 0,
+                shadowColor: "rgba(0, 0, 0, 0.5)",
+              },
+            },
+          },
+        ],
+      };
+      // use configuration item and data specified to show chart
+      myChart.setOption(option);
+      myPie.setOption(optionTwo);
+      dotChart.setOption(optionThree);
+      donut.setOption(optionFour);
+    </script>
+    <!-- endbuild -->
+  </body>
+</html>

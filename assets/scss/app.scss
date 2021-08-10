@@ -1,0 +1,257 @@
+// Custom bootstrap variable overrides
+@import "bootstrap_variable_overrides";
+
+// Bootstrap and its default variables
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Your style
+@import "variables";
+@import "mixins";
+@import "general";
+@import "layout";
+@import "module";
+
+/* CUSTOM STYLES
+-------------------------------------------------- */
+//Smooth Scroll
+//password
+.intro-one{
+  background:linear-gradient(rgba(47, 49, 56, 0.73), 
+  rgba(42, 45, 53, 0.73)),url(../img/citynights.jpg);
+  background-size: cover;
+  width: 41%;
+  height: 100% ;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  right: 0;
+ color: #fff;
+ padding: 220px 92px;
+ 
+}
+.login-left{
+  height: 100vh;
+  margin-top: 150px;
+  padding:0px 100px;
+  .headpage{
+    font-size: 25px;
+    font-weight: 400;
+    color: #999;
+  }
+}
+.logo-arc{
+  padding-bottom: 20px;
+}
+.form-f{
+  padding: 10px 0;
+  width: 273px;
+}
+.form-g{
+  width: 100%;
+  margin-left: 10px;
+}
+.form-d{
+  width: 100%;
+  padding-bottom: 25px;
+}
+.form-checks{
+  padding: 20px 0;
+  width: 100%;
+}
+.head4{
+  color:#999 ;
+}
+.button-one{
+  margin-right: 80px;
+}
+label{
+  margin-bottom: 16px;
+}
+
+
+
+//login page
+.login-page{
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+}
+.intro{
+  background:linear-gradient(rgba(64, 83, 136, 0.73), 
+  rgba(64, 83, 136, 0.73)),url(../img/city.jpg);
+  background-size: cover;
+  width: 33%;
+  height: 100vh;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+ color: #fff;
+ padding: 220px 92px;
+    .intro-head{
+      line-height: 3;
+    }
+}
+.login-right{
+  height: 100vh;
+  margin-top: 150px;
+  padding:0px 100px;
+  .logo-arc{
+    padding-bottom: 20px;
+  }
+}
+.login-right2{
+  height: 100vh;
+  margin-top: 150px;
+  padding:0px 270px;
+  .logo-arc{
+    padding-bottom: 20px;
+  }
+}
+  .loginp{
+    margin: 0;
+    color: #999;
+    
+  }
+  .hrl {
+    height: 0.5px;
+    margin: 8px 0;
+  }
+  label{
+    color: #999;
+  }
+  .form-check-one{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #999;
+  }
+  .recover-dash{
+    padding-top: 25px;
+  }
+
+//dashbord,companies,location
+html {
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #eceff1;
+}
+
+.header{
+  background-color: #fff;
+  height: 62px;
+  position:fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 5px 2px rgba(0,0,0,0.24);
+  z-index: 10;
+  .logo{
+    padding: 10px 12px;
+  }
+  .form-nav{
+    padding: 12px 0;
+  }
+  .drop{
+    padding: 10px 0;
+  }
+  .drop img{
+    width: 35px;
+  }
+
+}
+.navigations{
+  padding: 8px;
+}
+.header-link{
+  color: #343a40;
+}
+.logo-icon{
+  color: #999;
+  padding-top: 11px;
+}
+.logo-icon i{
+  font-size: 30px;
+}
+.logos{
+  padding:5px;
+}
+.main-section{
+  color: rgb(116, 111, 111);
+  .aside{
+    width: 220px;
+    background-color: #fff;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    .navigation{
+     padding: 20px;
+     .buttons{
+       padding: 0;
+       border: none;
+     }
+     .buttons:hover{
+       color:none;
+     }
+      h5{
+        color: #3f6ad8; 
+      }
+      h5 a{
+        color: #3f6ad8;
+        font-size: 16px;
+        font-weight: 600;
+      }
+      h5 a i{
+        color: #99999940;
+      }
+      ul li a{
+        color: #343a40;
+        
+      }
+      ul li:hover{
+        background-color:rgba(143, 173, 168, 0.884);
+        color: #3f6ad8;
+      }
+      ul li a.active{
+        background:rgba(143, 173, 168, 0.884);
+        border-color: none;
+      }
+    }
+  }
+  .header-one{
+    padding-left: 220px;
+    margin-top: 55px;
+    .navigation a{
+      padding: 1px;
+    }
+    .table-header{
+      margin: 10px -11px;padding: 6px;
+      background-color: #f7f7f7;
+    }
+    .table-header h5{
+      font-size: 20px;
+      background-color: #f7f7f7;
+    }
+    .table-header h5 p{
+      padding-left: 53px;
+    }
+    .table-header h5 i{
+      color: #fb83ba;
+      font-size: 36px;
+      padding-right:18px;
+
+    }
+    .table-section{
+      padding: 15px;
+      .card-type-1{
+        margin-bottom: 30px;
+        .card-body{
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

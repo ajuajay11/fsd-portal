@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Visitor managment</title>
+
+    <!-- Favicons -->
+    <link rel="icon" href="assets/img/favicons/favicon.ico">
+
+    <!-- Custom styles for this template with bootstrap css -->
+    <!-- build:css -->
+    <link rel="stylesheet" href="assets/fonts/bootstrap-icons/font/bootstrap-icons.css">
+        <link href="assets/css/app.css" rel="stylesheet" type="text/css">
+    <!-- endbuild -->
+</head>
+<body>
+
+<header class="header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2 d-flex justify-content-between">
+                <div class="logo">
+                    <img src="assets/img/architect.png" alt="">
+                
+                </div>
+                
+            </div>
+            <div class="col-8 d-flex justify-content-center">
+                <div class="form-nav">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+                <div class="navigations ">
+                    <ul class="nav">
+                        <li class="nav-item">
+                          <a class="nav-link active header-link" aria-current="page" href="#">mega menu</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link header-link" href="#">settings</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link header-link" href="#">projects</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-2 d-flex text-end">
+                <div class="dropdown drop">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      Hi,<span>I'm Sam</span><img class="img-fluid" src="assets/img/Profile-Avatar-PNG.png" alt="avatar">
+                    </a>   
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">My account</a></li>
+                      <li><a class="dropdown-item" href="index.html">Logout</a></li>
+                    </ul>
+                </div>
+                <a class="logo-icon" href=""><i class="bi bi-list"></i></a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!------hero-->
+
+<div class="main-section">
+    <div class="aside">
+      <div class="navigation">
+        <div>
+          <h5><a
+            class="btn d-flex justify-content-between collapsed"
+              data-bs-toggle="collapse"
+              href="#collapseExample2"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              Pages
+              <i class="bi bi-caret-down-fill justify-content-end"></i
+            ></a></h5>
+           <div class="collapse" id="collapseExample2">
+            <div class="card card-body buttons">
+              <ul class="nav nav-style flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" href="dashboard.html">dashboard</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="companies.html">Companies</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link list-group-item active" href="location.html">Location</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="visitors.html"> Visitors</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="security.html"> Securities</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-one">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="table-header">
+                        <h5>Locations</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="table-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card card-type-1">
+                            <div class="card-header">                                            
+                               <div class="d-flex justify-content-between">
+                                <h2>Card Title</h2>
+                                <div><a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addCompany">Add Location</a></div>                                     
+                            </div>
+                            <div class="card-body">
+                                <div class="modal fade" id="addCompany" tabindex="-1" aria-labelledby="addCompanyLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="eaddCompanyLabel">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput1" class="form-label">Company name </label>
+                                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                                              </div>
+                                              <div class="mb-3">
+                                                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                                              </div>
+                                              <div class="mb-3">
+                                                <label for="exampleFormControlInput1" class="form-label">password</label>
+                                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                                              </div>
+                                              <div class="mb-3">
+                                                <label for="exampleFormControlInput1" class="form-label">create password</label>
+                                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                                              </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Create location</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <table class="table">
+                                    <tr>
+                                        <th>S.no</th>
+                                        <th>Location name</th>
+                                        <th>Email id</th>
+                                        <th>Bought On</th>
+                                        <th>Action</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>UK</td>
+                                        <td>info@hp</td>
+                                        <td>01/01/2021</td>
+                                        <td>delete</td>
+                                    </tr>
+                                    <tr>
+                                     <td>2</td>
+                                     <td>USA</td>
+                                     <td>info@hp</td>
+                                     <td>01/01/2021</td>
+                                     <td>delete</td>
+                                 </tr>
+                                 <tr>
+                                     <td>3</td>
+                                     <td>POR</td>
+                                     <td>info@hp</td>
+                                     <td>01/01/2021</td>
+                                     <td>delete</td>
+                                 </tr>
+                                 <tr>
+                                     <td>4</td>
+                                     <td>Brazil</td>
+                                     <td>info@hp</td>
+                                     <td>01/01/2021</td>
+                                     <td>delete</td>
+                                 </tr>
+                                </table>
+                            </div>                                     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+   
+</div>
+<!------hero-->
+
+<!-- Bootstrap 5 Javascript -->
+<script src="assets/js/vendor/bootstrap.bundle.min.js" type="text/javascript"></script>
+<!-- Custom Javascript -->
+<!-- build:js -->
+<script src="assets/js/app.js"></script>
+<!-- endbuild -->
+</body>
+</html>
